@@ -260,6 +260,7 @@ input:checked + .slider:before {
 .filter {
     display: flex;
     align-items: end;
+    margin-bottom: 40px;
 }
 
 .filter > *:not(:first-child) {
