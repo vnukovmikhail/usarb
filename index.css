@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightcoral;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    background: white;
+    color: gray;
+    height: 60px;
+    width: 450px;
+    align-content: center;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: white;
+}
+
+.who-are-you h3 {
+    background: #25975A;
+    height: 40px;
+    width: 120px;
+    align-content: center;
+    text-align: center;
+}
+
+.who-are-you {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-zone {
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.instructions {
+    /* height: 120px; */
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instructions h5 {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+
+#day-of-week {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #666;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 100%;
+}
+
+#day-of-week option {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.result-zone {
+    background: white;
+    height: 100px;
+    width: 100%;
+}
