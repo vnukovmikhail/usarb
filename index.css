@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body > *,
 section > * {
     margin-top: 20px;
@@ -16,6 +17,7 @@ body {
     background-size: cover;
 }
 
+/* TEXT EDITING */
 h1 {
     font-family: sans-serif;
     font-size: 20px;
@@ -46,55 +48,13 @@ h3 {
     text-align: center;
 }
 
-.who-are-you {
-    display: flex;
-    justify-content: space-between;
-}
-
-.search-zone,
-#week-of-year {
-    border: none;
-    height: 40px;
-    width: 100%;
-}
-
-.instructions {
-    /* height: 120px; */
-    width: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.instructions h5 {
+h5 {
     font-size: 12px;
     color: white;
     margin: 0 0 20px 10px;
 }
 
-#week-of-year,
-#day-of-week {
-    font-family: 'Times New Roman';
-    font-size: 20px;
-    color: #666;
-    border: none;
-    background: white;
-    height: 40px;
-    width: 100%;
-    padding: 5px;
-}
-
-#day-of-week option {
-    font-family: 'Times New Roman';
-    font-size: 20px;
-}
-
-.result-zone {
-    background: white;
-    height: 100px;
-    width: 100%;
-}
-
+/* BUTTONS */
 .buttons {
     height: 20px;
 }
@@ -120,18 +80,20 @@ h3 {
     background: rgb(123, 70, 105);
 }
 
-#info-zone {
-    align-content: center;
-    background: #edfbf6;
-    color: #32d296;
-    font-size: 16px;
-    padding: 15px 30px 15px 15px;
-    width: 100%;
+.buttons a:not(:first-child) {
+    margin-left: 10px;
 }
 
+.buttons svg {
+    position: absolute;
+}
+
+/* TABLE  */
 table {
     width: 100%;
     height: 200px;
+    border-collapse: collapse;
+    border-spacing: 0px;
 }
 
 tr th:first-child,
@@ -158,15 +120,6 @@ tbody tr th:not(:first-child) {
     border: 1px solid black;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0px;
-}
-
-* section:not(:first-child) {
-    margin-left: 40px;
-}
-
 #shedule2 tbody tr th:first-child {
     width: 140px;
     height: 95px;
@@ -181,65 +134,16 @@ table {
     width: 565px;
 }
 
-#logo {
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-}
-
-#logo img {
-    height: 100%;
-}
-
-.search-div {
-    display: flex;
-}
-
-.uk-search-icon {
-    color: #25975A !important;
-}
-
-.buttons a:not(:first-child) {
-    margin-left: 10px;
-}
-
-.buttons a {
-    m
-}
-
 #shedule1 tbody tr th:hover {
     background: #f0506e;
     border: 1px solid white;
 }
 
-.filter {
-    display: flex;
-    align-items: end;
-}
-
-.filter > *:not(:first-child) {
-    margin-left: 20px;
-}
-
+/* SWITCH */
 .switch {
     position: relative;
     width: 60px;
     height: 34px;
-}
-
-.search-div {
-    position: relative;
-    background: white;
-}
-
-.search-div div:first-child {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
 .switch input {
@@ -267,7 +171,6 @@ table {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
   }
   
@@ -279,6 +182,100 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-.buttons svg {
-    position: absolute;
+/* OTHER */
+.who-are-you {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-zone,
+#week-of-year {
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.instructions {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#week-of-year,
+#day-of-week {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #666;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+
+#day-of-week option {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.result-zone {
+    background: white;
+    height: 100px;
+    width: 100%;
+}
+
+#info-zone {
+    align-content: center;
+    background: #edfbf6;
+    color: #32d296;
+    font-size: 16px;
+    padding: 15px 30px 15px 15px;
+    width: 100%;
+}
+
+* section:not(:first-child) {
+    margin-left: 40px;
+}
+
+#logo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    height: 100%;
+}
+
+.search-div {
+    display: flex;
+}
+
+.uk-search-icon {
+    color: #25975A !important;
+}
+
+.filter {
+    display: flex;
+    align-items: end;
+}
+
+.filter > *:not(:first-child) {
+    margin-left: 20px;
+}
+
+.search-div {
+    position: relative;
+    background: white;
+}
+
+.search-div div:first-child {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
