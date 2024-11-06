@@ -106,7 +106,8 @@ h3 {
     text-decoration: none;
     border-radius: 3px;
     background: black;
-    padding: 5px 10px ;
+    padding: 5px 25px 5px 10px;
+    border: 1px solid white;
 }
 
 .buttons a:first-child {
@@ -148,6 +149,10 @@ thead th:not(:first-child) {
     width: 50;
 }
 
+#shedule1, #shedule2 {
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
+} 
+
 tbody tr th:not(:first-child) {
     background: white;
     border: 1px solid black;
@@ -187,7 +192,23 @@ table {
     height: 100%;
 }
 
-#shedule1 tbody tr th:hover > *{
+.search-div {
+    display: flex;
+}
+
+.uk-search-icon {
+    color: #25975A !important;
+}
+
+.buttons a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.buttons a {
+    m
+}
+
+#shedule1 tbody tr th:hover {
     background: #f0506e;
     border: 1px solid white;
 }
@@ -206,7 +227,21 @@ table {
     width: 60px;
     height: 34px;
 }
-  
+
+.search-div {
+    position: relative;
+    background: white;
+}
+
+.search-div div:first-child {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .switch input {
     opacity: 0;
     width: 0;
@@ -242,4 +277,8 @@ input:checked + .slider {
   
 input:checked + .slider:before {
     transform: translateX(26px);
+}
+
+.buttons svg {
+    position: absolute;
 }
