@@ -3,12 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+body * {
+    margin-top: 20px;
+}
 
 body {
     background: lightcoral;
-    margin-top: 30px;
     display: flex;
     justify-content: center;
+    background: url(new_background_1.png);
+    background-size: cover;
 }
 
 h1 {
@@ -20,6 +24,11 @@ h1 {
     width: 450px;
     align-content: center;
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
 }
 
 h3 {
@@ -129,10 +138,38 @@ thead th:not(:first-child) {
     border: 1px solid white;
 }
 
-tr th:first-child {
+#shedule1 tr th:first-child {
     width: 120px;
 }
 
-thead th:not(:first-child) {
-    width: auto;
+#shedule1 thead th:not(:first-child) {
+    width: 50;
+}
+
+tbody tr th:not(:first-child) {
+    background: white;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* section:not(:first-child) {
+    margin-left: 40px;
+}
+
+#shedule2 tbody tr th:first-child {
+    width: 140px;
+    height: 95px;
+}
+
+#shedule2 tbody tr th:first-child p {
+    font-size: 12px;
+    margin: 0;
+}
+
+#shedule2 tbody tr th:not(:first-child) {
+    width: 565px;
 }
