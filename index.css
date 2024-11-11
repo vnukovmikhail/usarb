@@ -22,7 +22,7 @@ h1 {
     font-family: sans-serif;
     font-size: 20px;
     background: white;
-    color: #333;
+    color: #666666;
     height: 60px;
     width: 450px;
     align-content: center;
@@ -39,6 +39,17 @@ h3 {
     font-family: 'Times New Roman';
     font-size: 16px;
     color: white;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:hover > h3, 
+button:focus > h3 {
+    color: black;
+    background: #FFFFFF;
 }
 
 .who-are-you h3 {
@@ -116,6 +127,13 @@ thead th:not(:first-child) {
     box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
 } 
 
+#shedule1 tbody tr th:not(:first-child) {
+    color: white;
+    width: 50px;
+}
+
+
+
 tbody tr th:not(:first-child) {
     background: white;
     border: 1px solid black;
@@ -126,6 +144,12 @@ tbody tr th:not(:first-child) {
     height: 95px;
 }
 
+#shedule2 tbody tr:hover * {
+    background: lightgoldenrodyellow;
+    color: black;
+}
+
+
 #shedule2 tbody tr th:first-child div {
     font-size: 15px;
     margin: 5px;
@@ -133,10 +157,17 @@ tbody tr th:not(:first-child) {
 
 #shedule2 tbody tr th:not(:first-child) {
     width: 565px;
+    color: #666;
 }
 
 #shedule1 tbody tr th:hover {
     background: #f0506e;
+    border: 1px solid white;
+}
+
+#shedule1 tbody tr:hover > th:first-child {
+    background: lightgoldenrodyellow;
+    color: black;
     border: 1px solid white;
 }
 
@@ -224,6 +255,33 @@ input:checked + .slider:before {
     background: white;
     height: 100px;
     width: 100%;
+    list-style: none;
+    overflow-y: scroll;
+    scrollbar-width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.result-zone button {
+    width: 100%;
+}
+
+.result-zone li {
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px 5px 15px;
+    text-align: start;
+}
+.result-zone button:focus > li {
+    border-bottom: none;
+    color: white;
+    font-size: 16px;
+    background: #25975A;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px 5px 15px;
 }
 
 #info-zone {
@@ -280,4 +338,19 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
     
+}
+
+.red {
+    background: tomato !important;
+}
+
+.blue {
+    background: royalblue!important;
+}
+
+.gray {
+    background: gray!important;
+}
+.pink {
+    background: pink !important;
 }
